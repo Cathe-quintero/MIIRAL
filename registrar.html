@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar - MIIRAL</title>
+    <link rel="stylesheet" href="./CSS/registrar.css">
+</head>
+
+<body>
+    <nav class="table-container">
+        <table>
+            <tr>
+                <th><a href="inicio.html" >Inicio</a></th>
+                <th><a href="quienes-somos.html" >Quienes somos</a></th>
+                <th><a href="registrar.html" >Registrar</a></th>
+                <th><a href="login.html" >Iniciar sesión</a></th>
+                <th><a href="solicitar-cita.html" >Buscar citas</a></th>
+                <th><a href="contactar.html" >Contactar</a></th>
+            </tr>
+        </table>
+    </nav>
+    <header>
+        <h1>Registrar</h1>
+    </header>
+    <main>
+        <form class="registration-form">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="tipo-documento">Tipo de documento:</label>
+            <select id="tipo-documento" name="tipo-documento" required>
+                <option value="cedula">Cédula de ciudadanía</option>
+                <option value="tarjeta-identidad">Tarjeta de identidad</option>
+                <option value="pasaporte">Pasaporte</option>
+                <option value="cedula-extranjeria">Cédula de extranjería</option>
+            </select>
+
+            <label for="numero-documento">Número de documento:</label>
+            <input type="text" id="numero-documento" name="numero-documento" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero" required>
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+
+            <label for="lugar-nacimiento">Lugar de nacimiento:</label>
+            <input type="text" id="lugar-nacimiento" name="lugar-nacimiento" required>
+
+            <label for="direccion-residencia">Dirección de residencia:</label>
+            <input type="text" id="direccion-residencia" name="direccion-residencia" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contacto">Contacto:</label>
+            <input type="tel" id="contacto" name="contacto" required>
+
+            <label for="contacto-emergencia">Contacto de emergencia:</label>
+            <input type="tel" id="contacto-emergencia" name="contacto-emergencia" required>
+
+            <label for="historial-medico">Historial médico:</label>
+            <textarea id="historial-medico" name="historial-medico" rows="4" required></textarea>
+
+            <label for="pdf">Adjuntar historial médico en PDF:</label>
+            <input type="file" id="pdf" name="pdf" accept=".pdf" required>
+
+            <div class="buttons">
+                <button type="submit">Registrar</button>
+                <button type="reset">Cancelar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <br>
+        En MIIRAL, nos tomamos en serio la privacidad y seguridad de sus datos personales. Queremos asegurarnos de que
+        comprenda
+        como recopilamos, utilizamos, compartimos y protegemos su información. Al registrar su cuenta usted acepta
+        nuestras
+        políticas de privacidad y términos de uso.
+        </br>
+        <b>Copyright 2024 MIIRAL. Todos los derechos reservados.</b>
+    </footer>
+</body>
+</html>

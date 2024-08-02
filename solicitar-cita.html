@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" href="Favicon/favicon-16x16.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Cita</title>
+    <link rel="stylesheet" href="./CSS/solicitar-cita.css">
+</head>
+<body>
+    <nav class="table-container">
+        <table>
+            <tr>
+                <th><a href="inicio.html" >Inicio</a></th>
+                <th><a href="quienes-somos.html" >Quienes somos</a></th>
+                <th><a href="registrar.html" >Registrar</a></th>
+                <th><a href="login.html" >Iniciar sesión</a></th>
+                <th><a href="solicitar-cita.html" >Solicitar citas</a></th>
+                <th><a href="contactar.html" >Contactar</a></th>
+            </tr>
+        </table>
+    </nav>
+    <header>
+        <h1>Solicitar Cita Médica</h1>
+    </header>
+    <main>
+        <div class="buttons">
+            <button type="button" id="chooseDateTime">Elegir fecha y hora</button>
+            <button type="button" id="details">Detalles</button>
+            <button type="button" id="finalize">Finalizar</button>
+        </div>
+        
+        <form id="appointmentForm">
+            <label for="specialty">Especialidad:</label>
+            <select id="specialty" name="specialty">
+                <option value="medicina-general">Medicina General</option>
+                <option value="psicologia">Psicología</option>
+                <option value="fisioterapia">Fisioterapia</option>
+                <option value="nutricion">Nutrición</option>
+            </select>
+
+            <label for="doctor">Médico:</label>
+            <select id="doctor" name="doctor">
+                <option value="medico-1">Médico 1</option>
+                <option value="medico-2">Médico 2</option>
+                <option value="medico-3">Médico 3</option>
+                <option value="medico-4">Médico 4</option>
+            </select>
+
+            <label for="appointmentDate">Fecha:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate">
+
+            <label for="appointmentTime">Hora:</label>
+            <select id="appointmentTime" name="appointmentTime">
+                <option value="08:00">08:00</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+            </select>
+
+            <div class="navigation-buttons">
+                <button type="button" id="previous">Anterior</button>
+                <button type="button" id="next">Siguiente</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 MIIRAL. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
