@@ -1,16 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(162, 176, 202);
-  }
+    background-color: #b3bccc;
+    }
   
-  header {
-    background-color: rgb(162, 176, 202);
+  .search {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
   }
-  
 
 h1{
   text-align: center;
@@ -25,7 +24,7 @@ table {
 }
 
 th, td {
-  border: 3px solid #dddddd;
+  border-radius: 5px;
   text-align: left;
   padding: 10px;
 }
@@ -41,32 +40,110 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #48b8e1;
 }
 
 
-.language-switcher {
-    position:absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 5px 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.change-lenguage {
+  margin: 5px;
+  padding: 4px;
+  border-radius: 5px;
 }
 
-.language-switcher a {
-    color:rgb(60, 60, 120);
+.change-lenguage a {
+    color:rgb(49, 49, 152);
     text-decoration: none;
     margin: 0 5px;
 }
 
-.language-switcher a:hover {
-    text-decoration: underline;
+.change-lenguage a:hover {
+    color:#ffffff ;
 }
 
-footer{
-  text-align:center;
-  font-size: 10px;
+.text-imagelogo{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-logo{
+  margin-bottom: -30px;
+  width: 200px;
+  align-items: center;
+
+} 
+
+.main-principal{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para el main con la animación de fondo */
+.main-principal {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* O ajusta la altura según lo necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1; /* Asegura que los elementos de contenido estén por encima del fondo */
+}
+
+/* Imágenes de fondo con transición */
+.main-principal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Coloca el fondo detrás del contenido */
+  animation: fondoTransicion 20s infinite ease-in-out;
+  opacity: 0.3; /* Ajusta la opacidad del fondo para mayor legibilidad */
+}
+
+/* Animación para cambiar las imágenes del fondo */
+@keyframes fondoTransicion {
+  0% {
+    background-image: url(/Imagenes/manos-med.jpg);
+  }
+  33% {
+    background-image: url(/Imagenes/digital.jpg);
+  }
+  66% {
+    background-image: url(/Imagenes/cerebro.jpg);
+  }
+  100% {
+    background-image: url(/Imagenes/Consultorio.jpg);
+  }
+}
+
+.h-text{
+  margin-top: -70px;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+}
+.registro-footer2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.miiral-text2{
+  font-style: italic;
+  color: #1737B2;
+}
+
+.bold-text2{
+  margin-top: 10px;
+  color: #1737B2;
 }

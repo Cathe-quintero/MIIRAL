@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica</title>
+    <link rel="stylesheet" href="CSS/historia-clinica.css">
+</head>
+<body>
+    <header>
+        <h1>Historia Clínica</h1>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form class="clinical-history-form">
+                <label for="date">Fecha:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="doctor-id">ID Médico:</label>
+                <input type="text" id="doctor-id" name="doctor-id" required>
+
+                <label for="description">Descripción:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="symptoms">Síntomas:</label>
+                <textarea id="symptoms" name="symptoms" rows="3" required></textarea>
+
+                <label for="diagnosis">Diagnóstico:</label>
+                <textarea id="diagnosis" name="diagnosis" rows="3" required></textarea>
+
+                <label for="formula">Fórmula:</label>
+                <textarea id="formula" name="formula" rows="3"></textarea>
+
+                <label for="observations">Observaciones:</label>
+                <textarea id="observations" name="observations" rows="3"></textarea>
+
+                <div class="buttons">
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Limpiar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 MIIRAL. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

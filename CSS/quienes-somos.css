@@ -1,49 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(162, 176, 202);
-  }
-  
-  header {
-    background-color: rgb(162, 176, 202);
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #b3bccc;
   }
 
-  h1{
-    text-align:center;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:40px;
-    color:rgb(25, 25, 60) ;
-  }
+.search {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+}
+
+h1{
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:60px;
+color:rgb(25, 25, 60) ;
+}
+
+table {
+width: 100%;
+border-collapse:separate;
+}
+
+th, td {
+border-radius: 5px;
+text-align: left;
+padding: 10px;
+}
+
+th {
+background-color: #f2f2f2;
+text-align: center;
+}
+
+a {
+color: rgb(60, 60, 120);
+text-decoration: none;
+}
+
+a:hover {
+color: #48b8e1;
+}
+
+.about-us {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around; /* Distribuye las cajas horizontalmente */
+  align-items: flex-start;
+}
+
+.container {
+  background-color: #f2f2f2; /* Usar el mismo color que las cabeceras de tablas para consistencia */
+  border: 3px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 30%; /* Asegura que las cajas ocupen aproximadamente un tercio del ancho total */
+  text-align: center;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: rgb(25, 25, 60); /* Usar el mismo color que el título principal */
+}
+
+.container p, .container ul {
+  font-size: 16px;
+  color: rgb(60, 60, 120); /* Usar el mismo color que los enlaces */
+  text-align: left;
+}
+
+.container ul {
+  padding-left: 20px;
+}
+
+.registro-footer1 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.miiral-text1{
+  font-style: italic;
+  color: #1737B2;
+}
+.bold-text1{
+  margin-top: 10px;
+  color:#1737B2;
   
-  table {
-    width: 100%;
-    border-collapse:separate;
-  }
-  
-  th, td {
-    border: 3px solid #dddddd;
-    text-align: left;
-    padding: 10px;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-    text-align: center;
-  }
-  
-  a {
-    color: rgb(60, 60, 120);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  footer{
-    text-align:center;
-    font-size: 10px;
-  }
+}
