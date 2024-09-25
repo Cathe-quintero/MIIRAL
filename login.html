@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - MIIRAL</title>
-    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" href="./CSS/login.css"> 
 </head>
-
-
+ 
+ 
 <body>
     <header class="search" id="search-section"></header>
         <nav class="table-container"></nav>
@@ -26,27 +26,28 @@
     </header>
 
     <div class="form-container">
-        <form class="login-form" action="Paginas/conexion.php" method="POST">
-            <label for="usuario">Usuario:</label>
-            <input type="text" id="usuario" name="usuario" required>
-        
+        <form class="login-form" action="login.php" method="POST"> <!-- Cambié a 'login.php' para procesar el formulario -->
+            <label for="correo_electronico">Correo electrónico:</label>
+            <input type="email" id="correo_electronico" name="correo_electronico" required>
+       
             <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" required>
-        
+            <input type="password" id="contrasena" name="contrasena" required>
+       
             <div class="remember-me">
                 <input type="checkbox" id="recordarme" name="recordarme">
                 <label for="recordarme">Recuérdame</label>
             </div>
-        
+       
             <div class="container-center">
                 <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
             </div>
-        
+       
             <div class="container-center">
                 <button type="submit">ENTRAR</button>
             </div>
         </form>
     </div>
+ 
     <footer>
         <br>
         En MIIRAL, nos tomamos en serio la privacidad y seguridad de sus datos personales. Queremos asegurarnos de que
@@ -57,7 +58,7 @@
         </br>
         <b>Copyright 2024 MIIRAL. Todos los derechos reservados.</b>
     </footer>
-
+ 
 </body>
-
+ 
 </html>

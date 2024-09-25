@@ -24,7 +24,7 @@
     </header>
     <main>
         <div class="form-container"> 
-            <form class="registration-form">
+                <form class="registration-form" action="registro-usuario-nuevo.php" method="POST">  
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" name="usuario" required>
 
@@ -42,6 +42,15 @@
 
                 <label for="contacto">Teléfono:</label>
                 <input type="tel" id="contacto" name="contacto" required>
+
+                <label for="roles">Rol:</label>
+                <select id="roles" name="roles_id_rol" required>
+                    <option value="" disabled selected>Seleccione un rol</option>
+                    <option value="1">Usuario</option>
+                    <option value="2">Administrador</option>
+                    <option value="3">Paciente</option>
+                    <option value="4">Médico</option>
+                </select>
 
                 <div class="buttons">
                     <button type="submit">Registrar</button>
