@@ -112,16 +112,16 @@ a:hover {
 /* Animación para cambiar las imágenes del fondo */
 @keyframes fondoTransicion {
   0% {
-  background-image: url(/Imagenes/manos-med.jpg);
+  background-image: url(../Imagenes/manos-med.jpg);
 }
 33% {
-  background-image: url(/Imagenes/digital.jpg);
+  background-image: url(../Imagenes/digital.jpg);
 }
 66% {
-  background-image: url(/Imagenes/cerebro.jpg);
+  background-image: url(../Imagenes/cerebro.jpg);
 }
 100% {
-  background-image: url(/Imagenes/Consultorio.jpg);
+  background-image: url(../Imagenes/Consultorio.jpg);
 }
 }
 
