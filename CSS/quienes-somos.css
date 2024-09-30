@@ -18,6 +18,12 @@ font-size:60px;
 color:rgb(25, 25, 60) ;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px; /* Reducir el tamaño de la fuente en pantallas más pequeñas */
+  }
+}
+
 table {
 width: 100%;
 border-collapse:separate;
@@ -44,12 +50,10 @@ color: #48b8e1;
 }
 
 .about-us {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
   display: flex;
   justify-content: space-around; /* Distribuye las cajas horizontalmente */
-  align-items: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -60,7 +64,22 @@ color: #48b8e1;
   margin: 10px;
   padding: 20px;
   width: 30%; /* Asegura que las cajas ocupen aproximadamente un tercio del ancho total */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 45%; /* Hacer que las cajas ocupen casi la mitad en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* En pantallas pequeñas, las cajas ocupan todo el ancho */
+  }
 }
 
 .container img {
@@ -74,12 +93,13 @@ color: #48b8e1;
   margin-top: 0;
   font-size: 24px;
   color: rgb(25, 25, 60); /* Usar el mismo color que el título principal */
+  text-align: center;
 }
 
 .container p, .container ul {
   font-size: 16px;
   color: rgb(60, 60, 120); /* Usar el mismo color que los enlaces */
-  text-align: left;
+  text-align: center;
 }
 
 .container ul {
@@ -93,6 +113,7 @@ color: #48b8e1;
   flex-direction: column;
   text-align: center;
   color: rgb(0, 0, 0);
+  background-color: #f2f2f2;
 }
 
 .miiral-text1{

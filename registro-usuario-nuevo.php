@@ -1,5 +1,5 @@
 <?php
-// Incluir la conexión a la base de datos
+
 include 'conexion.php';
 
 // Verificar si los datos del formulario fueron enviados

@@ -1,151 +1,153 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #b3bccc;
-    }
-  
-  .search {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    text-align: center;
-    padding: 5px;
+  font-family: Arial, sans-serif;
+  background-color: #b3bccc;
   }
 
-h1{
+.search {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   text-align: center;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:60px;
-  color:rgb(25, 25, 60) ;
+  padding: 5px;
+}
+
+h1{
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+font-size:60px;
+color:rgb(25, 25, 60) ;
 }
 
 table {
-  width: 100%;
-  border-collapse:separate;
+width: 100%;
+border-collapse:separate;
 }
 
 th, td {
-  border-radius: 5px;
-  text-align: left;
-  padding: 10px;
+border-radius: 5px;
+text-align: left;
+padding: 10px;
 }
 
 th {
-  background-color: #f2f2f2;
-  text-align: center;
+background-color: #f2f2f2;
+text-align: center;
 }
 
 a {
-  color: rgb(60, 60, 120);
-  text-decoration: none;
+color: rgb(60, 60, 120);
+text-decoration: none;
 }
 
 a:hover {
-  color: #48b8e1;
+color: #48b8e1;
 }
 
 
 .change-lenguage {
-  margin: 5px;
-  padding: 4px;
-  border-radius: 5px;
+margin: 5px;
+padding: 4px;
+border-radius: 5px;
 }
 
 .change-lenguage a {
-    color:rgb(49, 49, 152);
-    text-decoration: none;
-    margin: 0 5px;
+  color:rgb(49, 49, 152);
+  text-decoration: none;
+  margin: 0 5px;
 }
 
 .change-lenguage a:hover {
-    color:#ffffff ;
+  color:#ffffff ;
 }
 
 .text-imagelogo{
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+margin: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 .image-logo{
-  margin-bottom: -30px;
-  width: 200px;
-  align-items: center;
+margin-bottom: -30px;
+width: 200px;
+align-items: center;
 
 } 
 
 .main-principal{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
 }
 
 /* Estilo para el main con la animación de fondo */
 .main-principal {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* O ajusta la altura según lo necesario */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  z-index: 1; /* Asegura que los elementos de contenido estén por encima del fondo */
+position: relative;
+width: 100%;
+height: 100vh; /* O ajusta la altura según lo necesario */
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+z-index: 1; /* Asegura que los elementos de contenido estén por encima del fondo */
 }
 
 
 /* Imágenes de fondo con transición */
 .main-principal::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Coloca el fondo detrás del contenido */
-  animation: fondoTransicion 20s infinite ease-in-out;
-  opacity: 0.3; /* Ajusta la opacidad del fondo para mayor legibilidad */
-  
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-size: cover;
+background-position: center;
+z-index: -1; /* Coloca el fondo detrás del contenido */
+animation: fondoTransicion 20s infinite ease-in-out;
+opacity: 0.3; /* Ajusta la opacidad del fondo para mayor legibilidad */
+
 }
 
 /* Animación para cambiar las imágenes del fondo */
 @keyframes fondoTransicion {
-  0% {
-  background-image: url(../Imagenes/manos-med.jpg);
+0% {
+background-image: url(../Imagenes/manos-med.jpg);
 }
 33% {
-  background-image: url(../Imagenes/digital.jpg);
+background-image: url(../Imagenes/digital.jpg);
 }
 66% {
-  background-image: url(../Imagenes/cerebro.jpg);
+background-image: url(../Imagenes/cerebro.jpg);
 }
 100% {
-  background-image: url(../Imagenes/Consultorio.jpg);
+background-image: url(../Imagenes/Consultorio.jpg);
 }
 }
 
 .h-text{
-  margin-top: -70px;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
+margin-top: -70px;
+font-size: 20px;
+text-align: center;
+display: flex;
 }
+
 .registro-footer2 {
-  margin-top: 40px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: rgb(0, 0, 0);
+margin-top: 40px;
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+text-align: center;
+color: rgb(0, 0, 0);
+background-color: #f2f2f2;
 }
 
 .miiral-text2{
-  font-style: italic;
-  color: #1737B2;
+font-style: italic;
+color: #1737B2;
 }
 
 .bold-text2{
-  margin-top: 10px;
-  color: #1737B2;
+margin-top: 10px;
+color: #1737B2;
 }
